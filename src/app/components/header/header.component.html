@@ -1,0 +1,53 @@
+<header class="header">
+    <nav class="nav">
+        <a href="#" class="nav__logo-link">
+            <img src="../../../assets/img/logo.png" alt="Logo de Hugo Camargo" srcset="" class="nav__logo">
+        </a>
+
+        <div class="nav__menu" [ngClass]="{'show-menu': showMenu}">
+            <img src="../../../assets/img/logo-blanco.png" alt="Logo de Hugo Camargo" srcset="" class="nav__logo">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="" class="nav__link" (click)="showMenu = false">
+                        <i class="ri-home-5-line nav__link-icon"></i> <span class="nav__link-text">Inicio</span>
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="" class="nav__link">
+                        <i class="ri-user-line nav__link-icon"></i> <span class="nav__link-text">Quién soy</span>
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="" class="nav__link">
+                        <i class="ri-file-line nav__link-icon"></i> <span class="nav__link-text">Experiencia</span>
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="" class="nav__link">
+                        <i class="ri-search-line nav__link-icon"></i> <span class="nav__link-text">Mi investigación</span>
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="" class="nav__link">
+                        <i class="ri-mail-line nav__link-icon"></i> <span class="nav__link-text">Contacto</span>
+                    </a>
+                </li>
+                
+            </ul>
+
+            <div class="nav__social-links">
+                <i class="ri-linkedin-box-fill"></i>
+                <i class="ri-instagram-fill"></i>
+                <i class="ri-twitter-fill"></i>
+            </div>
+
+            <div class="nav__close" (click)="toggleNavbar()">
+                <i class="ri-arrow-left-circle-line"></i>
+            </div>
+        </div>
+
+        <div class="nav__toggle" (click)="toggleNavbar()">
+            <i class="ri-menu-line"></i>
+        </div>
+    </nav>
+</header>
