@@ -1,0 +1,60 @@
+// Hero section
+.hero {
+    @apply px-5 relative;
+}
+
+.hero__container {
+    @apply container h-screen grid grid-cols-12;
+    grid-template-rows: repeat(8, minmax(0, 1fr));
+}
+
+.hero__logo {
+    @apply row-start-2 col-start-1 col-end-12 justify-self-end self-start;
+}
+
+.hero__copy {
+    @apply row-start-3 col-start-4 col-end-12;
+}
+
+.hero__img {
+    @apply absolute left-0 top-1/3;
+}
+
+.separador {
+    @apply h-1 bg-primary mx-5 my-6 rounded-full;
+}
+
+// About section
+.about__container {
+    @apply container flex flex-col gap-8;
+}
+
+.about__title {
+    @apply font-title mx-5;
+
+    .about__title-1 {
+        @apply text-primary font-medium text-2xl leading-4;
+    }
+
+    .about__title-2 {
+        @apply font-black text-5xl ml-8;
+    }
+}
+
+.about__text {
+    @apply mx-5 flex flex-col gap-5 indent-5;
+}
+
+.about__features {
+    @apply mx-5 flex flex-col gap-5;
+}
+
+.about__feature {
+    @apply flex gap-3 items-start;
+
+    .feature-marker {
+        @apply mt-[0.625rem];
+    }
+}
+
+// 
