@@ -1,0 +1,23 @@
+.card {
+    @apply flex flex-col gap-2 py-5;
+}
+
+.card__header {
+    @apply flex items-center gap-5;
+}
+
+.card__logo {
+    @apply w-12;
+}
+
+.card__title {
+    @apply font-title font-extrabold leading-normal;
+}
+
+.card__timelapse {
+    @apply text-gray-400 text-xs font-medium;
+}
+
+.card__description {
+    @apply text-sm leading-normal;
+}

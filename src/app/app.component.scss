@@ -57,4 +57,29 @@
     }
 }
 
-// 
+// Scholarship
+
+.scholarship {
+    @apply mx-5;
+}
+
+.scholarship__container {
+    @apply container mt-5;
+}
+
+.scholarship__title {
+    @apply font-title text-5xl font-black flex flex-col items-end mb-5;
+
+    .scholarship__title-1 {
+        @apply leading-6 mr-8;
+    }
+
+    .scholarship__title-2 {
+        @apply text-primary flex gap-2;
+
+        &::before {
+            content: "Y";
+            @apply text-black text-xl font-medium;
+        }
+    }
+}

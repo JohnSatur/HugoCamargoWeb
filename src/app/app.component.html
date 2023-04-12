@@ -29,19 +29,30 @@
                 <div class="about__feature">
                     <img src="../assets/img/marcador.jpg" alt="marcador" class="feature-marker"> <span class="feature-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                 </div>
-
                 <div class="about__feature">
                     <img src="../assets/img/marcador.jpg" alt="marcador" class="feature-marker"> <span class="feature-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                 </div>
-
                 <div class="about__feature">
                     <img src="../assets/img/marcador.jpg" alt="marcador" class="feature-marker"> <span class="feature-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                 </div>
-
                 <div class="about__feature">
                     <img src="../assets/img/marcador.jpg" alt="marcador" class="feature-marker"><span class="feature-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                 </div>
             </div>
+            <div class="separador"></div>
+        </div>
+    </section>
+
+    <!-- Scholarship -->
+    <section class="scholarship">
+        <div class="scholarship__container">
+            <div class="scholarship__title">
+                <h2 class="scholarship__title-1">OPORTUNIDADES</h2>
+                <h2 class="scholarship__title-2">BECAS</h2>
+            </div>
+
+            <app-card *ngFor="let card of becas" [institucion]="card.institucion" [periodo]="card.periodo" [logoURL]="card.logoURL" [descripcion]="card.descripcion"></app-card>
+
         </div>
     </section>
 </main>
