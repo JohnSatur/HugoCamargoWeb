@@ -83,3 +83,30 @@
         }
     }
 }
+
+// Experience
+
+.experience {
+    @apply mx-5;
+}
+
+.experience__container {
+    @apply container mt-5;
+}
+
+.experience__title {
+    @apply font-title text-5xl font-black flex flex-col items-start mb-5;
+
+    .experience__title-1 {
+        @apply leading-8 mr-8;
+    }
+
+    .experience__title-2 {
+        @apply text-primary flex gap-2 ml-8;
+
+        &::before {
+            content: "Y";
+            @apply text-black text-xl font-medium;
+        }
+    }
+}

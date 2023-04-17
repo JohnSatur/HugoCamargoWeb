@@ -12,7 +12,7 @@
     <div class="separador"></div>
 
     <!-- About -->
-    <section class="about">
+    <section class="about" id="about">
         <div class="about__container">
             <div class="about__title">
                 <h2 class="about__title-1">¿QUIÉN ES</h2>
@@ -20,23 +20,23 @@
             </div>
             <img src="../assets/img/retrato-hugo-camargo-2.jpg" alt="Retrato de Hugo Camargo" class="about__img">
             <div class="about__text">
-                <p class="about__paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, repellendus ea nostrum natus accusamus, explicabo excepturi rerum, adipisci fugit dolor quos? Neque, esse temporibus recusandae sit iusto qui hic, alias fugit aperiam rerum, dolorem nihil voluptatibus sint? Deserunt est accusamus, saepe libero impedit commodi odio sit quisquam iusto recusandae eius.</p>
-                <p class="about__paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, repellendus ea nostrum natus accusamus, explicabo excepturi rerum, adipisci fugit dolor quos? Neque, esse temporibus recusandae sit iusto qui hic, alias fugit aperiam rerum, dolorem nihil voluptatibus sint? Deserunt est accusamus, saepe libero impedit commodi odio sit quisquam iusto recusandae eius.</p>
-                <p class="about__paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, repellendus ea nostrum natus accusamus, explicabo excepturi rerum, adipisci fugit dolor quos? Neque, esse temporibus recusandae sit iusto qui hic, alias fugit aperiam rerum, dolorem nihil voluptatibus sint? Deserunt est accusamus, saepe libero impedit commodi odio sit quisquam iusto recusandae eius.</p>
+                <p class="about__paragraph">Permíteme presentarme: soy el doctor Hugo Camargo, investigador en física que actualmente se encuentra realizando su posdoctorado en Corea del Sur. Cuento con una amplia formación académica en el campo de la física, he llevado a cabo investigaciones en áreas como la física de materiales, la física cuántica, relatividad y altas energías.</p>
+                <p class="about__paragraph">Actualmente, como posdoctorado en Corea del Sur, me encuentro trabajando en colaboración con otros investigadores en proyectos de alta complejidad. Mi habilidad para analizar y resolver problemas complejos me ha permitido hacer importantes contribuciones a mi campo y he demostrado una gran capacidad para trabajar en equipo.</p>
+                <p class="about__paragraph">Espero podamos conocernos pronto y compartir nuestro conocimiento.</p>
             </div>
             <div class="separador"></div>
             <div class="about__features">
                 <div class="about__feature">
-                    <img src="../assets/img/marcador.jpg" alt="marcador" class="feature-marker"> <span class="feature-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                    <img src="../assets/img/marcador.jpg" alt="marcador" class="feature-marker"> <span class="feature-text">Me apasiona tocar la guitarra.</span>
                 </div>
                 <div class="about__feature">
-                    <img src="../assets/img/marcador.jpg" alt="marcador" class="feature-marker"> <span class="feature-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                    <img src="../assets/img/marcador.jpg" alt="marcador" class="feature-marker"> <span class="feature-text">Me gustan los videojuegos.</span>
                 </div>
                 <div class="about__feature">
-                    <img src="../assets/img/marcador.jpg" alt="marcador" class="feature-marker"> <span class="feature-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                    <img src="../assets/img/marcador.jpg" alt="marcador" class="feature-marker"> <span class="feature-text">Me encanta conocer nuevos lugares.</span>
                 </div>
                 <div class="about__feature">
-                    <img src="../assets/img/marcador.jpg" alt="marcador" class="feature-marker"><span class="feature-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                    <img src="../assets/img/marcador.jpg" alt="marcador" class="feature-marker"><span class="feature-text">Soy alérgico a las granadas de fragmentación.</span>
                 </div>
             </div>
             <div class="separador"></div>
@@ -44,7 +44,7 @@
     </section>
 
     <!-- Scholarship -->
-    <section class="scholarship">
+    <section class="scholarship" id="scholarship">
         <div class="scholarship__container">
             <div class="scholarship__title">
                 <h2 class="scholarship__title-1">OPORTUNIDADES</h2>
@@ -52,7 +52,18 @@
             </div>
 
             <app-card *ngFor="let card of becas" [institucion]="card.institucion" [periodo]="card.periodo" [logoURL]="card.logoURL" [descripcion]="card.descripcion"></app-card>
+        </div>
+    </section>
 
+    <!-- Experience -->
+    <section class="experience" id="experience">
+        <div class="experience__container">
+            <div class="experience__title">
+                <h2 class="experience__title-1">EXPERIENCIA</h2>
+                <h2 class="experience__title-2">EDUCACIÓN</h2>
+            </div>
+
+            <app-card *ngFor="let card of experiencia" [institucion]="card.institucion" [periodo]="card.periodo" [logoURL]="card.logoURL" [descripcion]="card.descripcion"></app-card>
         </div>
     </section>
 </main>

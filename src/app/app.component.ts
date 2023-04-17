@@ -34,4 +34,25 @@ export class AppComponent {
       descripcion: 'Recibí una beca de investigación de la National Research Foundation (NRF) de Corea del Sur para llevar a cabo investigaciones en el campo de la física de altas energías con el proyecto "Quantum Information Aspects of Gravity'
     }
   ];
+
+  experiencia: Array<{institucion: string, logoURL: string, periodo: string, descripcion: string}> = [
+    {
+      institucion: 'Instituto de Ciencias Nucleares - UNAM',
+      logoURL: '../../../assets/img/logo-icn-unam.jpg',
+      periodo: '2 años',
+      descripcion: 'Realicé labores de investigación y docencia en colaboración con el Prof. Miguel Socolovsky, miembro del Departamento de Física de Altas Energías del Instituto de Ciencias Nucleares (ICN) de la UNAM.'
+    }, 
+    {
+      institucion: 'Instituto Max Plank de Física Gravitacional',
+      logoURL: '../../../assets/img/logo-instituto-max-plank.jpg',
+      periodo: '4 años, 2 meses',
+      descripcion: 'Realicé investigaciones en física de altas energías como miembro de la Escuela Internacional de Investigación Max Planck Internacional (IMPRS) para aspectos matemáticos y físicos de la Gravitación, Cosmología y Teoría cuántica de campos en el Instituto Max Planck de Física Gravitacional (Instituto Albert Einstein).'
+    },
+    {
+      institucion: 'Instituto Gwangju de Ciencia y Tecnología',
+      logoURL: '../../../assets/img/logo-gist.jpg',
+      periodo: '1 año, 2 meses (actual)',
+      descripcion: 'Actualmente estoy realizando una investigación sobre los aspectos de la información cuántica de la gravedad, que estoy llevando a cabo como parte de una beca de investigación apoyada por la Fundación Nacional de Investigación de Corea (NRF). Busco comprender las propiedades cuánticas de la gravedad utilizando herramientas de información cuántica, dentro de un área de gravedad cuántica llamada holografía.'
+    }
+  ];
 }
