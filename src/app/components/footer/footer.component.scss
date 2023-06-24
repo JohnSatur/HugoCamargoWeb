@@ -1,0 +1,32 @@
+.footer {
+    @apply bg-primary p-5 mt-5 text-white;
+}
+
+.footer__logo {
+    @apply text-4xl font-title font-extrabold;
+}
+
+.footer__container {
+    @apply container flex flex-col gap-5;
+}
+
+.footer__title {
+    @apply font-title text-2xl font-medium leading-normal;
+}
+
+.footer__link,
+.footer__description {
+    @apply text-lg;
+}
+
+.footer__social {
+    @apply flex gap-3;
+}
+
+.footer__social-link {
+    @apply text-xl;
+}
+
+.footer__copy {
+    @apply text-sm;
+}

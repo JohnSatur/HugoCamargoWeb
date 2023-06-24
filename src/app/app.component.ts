@@ -55,4 +55,91 @@ export class AppComponent {
       descripcion: 'Actualmente estoy realizando una investigación sobre los aspectos de la información cuántica de la gravedad, que estoy llevando a cabo como parte de una beca de investigación apoyada por la Fundación Nacional de Investigación de Corea (NRF). Busco comprender las propiedades cuánticas de la gravedad utilizando herramientas de información cuántica, dentro de un área de gravedad cuántica llamada holografía.'
     }
   ];
+
+  articulos: Array<{titulo: string, imgURL: string, fecha: string, autores: string, link: string}> = [
+    {
+      titulo: 'Krylov complexity in free and interacting scalar field theories with bounded power spectrum',
+      imgURL: '../../../assets/img/scalar-field.png',
+      fecha: 'Junio, 2023',
+      autores: 'Hugo A Camargo, Viktor Jahnke, Keun-Young Kim, Mitsuhiro Nishida',
+      link: '../../../assets/pdf/Krylov complexity in free and interacting scalar field theories with bounded power spectrum.pdf'
+    },
+    {
+      titulo: 'Balanced partial entanglement and mixed state correlations',
+      imgURL: '../../../assets/img/partial-entanglement.png',
+      fecha: 'Abril 21, 2022',
+      autores: 'Hugo A Camargo, Pratik Nandy, Qiang Wen, Haocheng Zhong',
+      link: '../../../assets/pdf/Balanced partial entanglement and mixed state correlations.pdf'
+    },
+    {
+      titulo: 'Q-curvature and path integral complexity',
+      imgURL: '../../../assets/img/q-curvature.png',
+      fecha: 'Abril, 2022',
+      autores: 'Hugo A Camargo, Pawel Caputa, Pratik Nandy',
+      link: '../../../assets/pdf/Q-curvature and path integral complexity.pdf'
+    },
+    {
+      titulo: 'Long distance entanglement of purification and reflected entropy in conformal field theory',
+      imgURL: '../../../assets/img/long-distance-entanglement.jpg',
+      fecha: 'Septiembre 29, 2021',
+      autores: 'Hugo A Camargo, Lucas Hackl, Michal P Heller, Alexander Jahn, Bennet Windt',
+      link: '../../../assets/pdf/Long distance entanglement of purification and reflected entropy in conformal field theory.pdf'
+    },
+    {
+      titulo: 'Entanglement and complexity of purification in (1 + 1)-dimensional free conformal field theories',
+      imgURL: '../../../assets/img/complexity-of-purification.png',
+      fecha: 'Marzo 17, 2021',
+      autores: 'Hugo A Camargo, Lucas Hackl, Michal P Heller, Alexander Jahn, Tadashi Takayanagi, Bennet Windt',
+      link: '../../../assets/pdf/Entanglement and complexity of purification in 1+1 dimensional free conformal field theories.pdf'
+    },
+    {
+      titulo: 'On the efficacy of virtual seminars',
+      imgURL: '../../../assets/img/virtual-seminar.webp',
+      fecha: 'Abril 24, 2020',
+      autores: 'Hugo Camargo, Michal P Heller, Ro Jefferson, Johannes Knaute, Ignacio Reyes, Sukhbinder Singh, Viktor Svensson',
+      link: '../../../assets/pdf/On the efficacy of virtual seminars.pdf'
+    },
+    {
+      titulo: 'Path integral optimization as circuit complexity',
+      imgURL: '../../../assets/img/path-integral.jpg',
+      fecha: 'Julio 1, 2019',
+      autores: 'Hugo A Camargo, Michal P Heller, Ro Jefferson, Johannes Knaute',
+      link: '../../../assets/pdf/Path integral optimization as circuit complexity.pdf'
+    },
+    {
+      titulo: 'Quantum Scalar Field Behavior of the Conformally Flat Part of the SKS Metric',
+      imgURL: '../../../assets/img/quantum-scalar-field.jpg',
+      fecha: 'Septiembre 19, 2017',
+      autores: 'HA Camargo, EJ Gonzalez de Urreta, M Socolovsky',
+      link: '../../../assets/pdf/Quantum Scalar Field Behavior of the Conformally Flat Part of the SKS Metric.pdf'
+    },
+    {
+      titulo: 'Weyl geometry, anti-de Sitter space, and-theory',
+      imgURL: '../../../assets/img/weyl-geometry.png',
+      fecha: 'Mayo 26, 2016',
+      autores: 'HA Camargo, Emiliano José González de Urreta, Miguel Socolovsky',
+      link: '../../../assets/pdf/Weyl geometry, anti-de Sitter space, and-theory.pdf'
+    },
+    {
+      titulo: 'Rindler approximation to Kerr-Newman black hole',
+      imgURL: '../../../assets/img/kerr-newman-black-hole.png',
+      fecha: 'Noviembre 19, 2015',
+      autores: 'HA Camargo, M Socolovsky',
+      link: '../../../assets/pdf/Rindler approximation to Kerr-Newman black hole.pdf'
+    },
+    {
+      titulo: 'Newman-Janis algorithm revisited',
+      imgURL: '../../../assets/img/newman-janis-algorithm.png',
+      fecha: 'Enero 2015',
+      autores: 'O Brauer, HA Camargo, M Socolovsky',
+      link: '../../../assets/pdf/Newman-Janis algorithm revisited.pdf'
+    },
+    {
+      titulo: 'Proper time and length in Schwarzschild geometry',
+      imgURL: '../../../assets/img/schwarzschild-geometry.png',
+      fecha: 'Junio 5, 2014',
+      autores: 'O Brauer, HA Camargo, M Socolovsky',
+      link: '../../../assets/pdf/Proper time and length in Schwarzschild geometry.pdf'
+    }    
+  ];
 }

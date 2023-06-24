@@ -110,3 +110,24 @@
         }
     }
 }
+
+.research {
+    @apply mx-5;
+}
+
+.research__container {
+    @apply container;
+}
+
+.research__title {
+    @apply font-title text-5xl font-black mb-5 flex gap-2 text-primary;
+
+    &::before {
+        content: 'MI';
+        @apply text-black text-xl font-medium;
+    }
+}
+
+.research__articles {
+    @apply flex flex-col gap-5;
+}

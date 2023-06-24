@@ -7,7 +7,7 @@
             <img class="hero__logo" src="../assets/img/logo.png" alt="Logo de Hugo Camargo">
             <h1 class="hero__copy">Investigador postdoctoral del Instituto de Ciencia y Tecnología de Gwangju</h1>
         </div>
-        <img src="../assets/img/retrato-hugo-camargo-1.jpg" alt="Retrato de Hugo Camargo" class="hero__img">
+        <img src="../assets/img/hero.png" alt="Retrato de Hugo Camargo" class="hero__img">
     </section>
     <div class="separador"></div>
 
@@ -66,4 +66,16 @@
             <app-card *ngFor="let card of experiencia" [institucion]="card.institucion" [periodo]="card.periodo" [logoURL]="card.logoURL" [descripcion]="card.descripcion"></app-card>
         </div>
     </section>
+
+    <!-- Research -->
+    <section class="research" id="research">
+        <div class="research__container">
+            <h2 class="research__title">INVESTIGACIÓN</h2>
+
+            <div class="research__articles">
+                <app-article *ngFor="let articulo of articulos" [autores]="articulo.autores" [fecha]="articulo.fecha" [titulo]="articulo.titulo" [imgURL]="articulo.imgURL" [link]="articulo.link"></app-article>
+            </div>
+        </div>
+    </section>
 </main>
+<app-footer></app-footer>
