@@ -191,4 +191,28 @@ export class AppComponent {
       link: '../../../assets/pdf/Proper time and length in Schwarzschild geometry.pdf',
     },
   ];
+
+  /*ngOnInit(): void {
+    //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
+    //Add 'implements OnInit' to the class.
+    this.languageService.language$.subscribe((language) => {
+      this.loadTranslations(language);
+    });
+  }
+
+  private loadTranslations(language: string): void {
+      import(`@angular/common/locales/${language}`).then(() => {
+        import (`../locale/messages.${language}.xlf`).then((translations) => {
+          this.registerTranslations(translations.default);
+        });
+      });
+  }
+
+  private registerTranslations(translations: any): void {
+    const translationList = Array.isArray(translations) ? translations : [translations];
+
+    translationList.forEach((translation) => {
+      this.languageService.registerTranslation(translation);
+    })
+  }*/
 }

@@ -4,24 +4,24 @@ section {
 
 // Hero section
 .hero {
-    @apply px-5 relative;
+    @apply px-5 relative overflow-hidden;
 }
 
 .hero__container {
-    @apply container h-screen grid grid-cols-12;
+    @apply container h-screen grid grid-cols-10;
     grid-template-rows: repeat(8, minmax(0, 1fr));
 }
 
 .hero__logo {
-    @apply row-start-2 col-start-1 col-end-12 justify-self-end self-start;
+    @apply row-start-2 col-start-3 col-end-8 justify-self-end self-start inline-grid;
 }
 
 .hero__copy {
-    @apply row-start-3 col-start-4 col-end-12;
+    @apply row-start-3 col-start-4 col-end-12 text-lg;
 }
 
 .hero__img {
-    @apply absolute left-0 top-1/3;
+    @apply absolute left-0 top-1/3 sm:w-3/4 -z-10;
 }
 
 .separador {
@@ -30,23 +30,51 @@ section {
 
 // About section
 .about__container {
-    @apply container flex flex-col gap-8;
+    @apply container flex flex-col gap-8 mx-auto;
 }
 
 .about__title {
     @apply font-title mx-5;
 
     .about__title-1 {
-        @apply text-primary font-medium text-2xl leading-4;
+        @apply text-primary font-medium text-2xl md:text-4xl leading-4;
     }
 
     .about__title-2 {
-        @apply font-black text-5xl ml-8;
+        @apply font-black text-5xl ml-8 md:text-7xl;
+    }
+}
+
+.about__content {
+    @apply flex flex-col md:flex-row gap-5;
+
+    .about__img {
+        @apply w-full h-[50vh] md:h-auto md:flex-1 bg-[url('../assets/img/retrato-hugo-camargo-2.jpg')] bg-cover bg-center;
+    }
+
+    .about__text {
+        @apply md:flex-1;
     }
 }
 
 .about__text {
     @apply mx-5 flex flex-col gap-5;
+
+    .about__text-container {
+        @apply flex flex-col md:flex-row gap-5;
+
+        .about__img {
+            @apply w-full h-[50vh] md:h-auto bg-cover bg-center md:flex-1;
+        }
+
+        .about__paragraph {
+            @apply md:flex-1;
+        }
+    }
+}
+
+.img-dictionary {
+    @apply bg-[url('../assets/img/dictionary.webp')];
 }
 
 .about__paragraph {
@@ -54,8 +82,12 @@ section {
 }
 
 .about__text-subtitle {
-    @apply text-2xl font-extrabold text-primary font-title;
+    @apply text-2xl md:text-4xl font-extrabold text-primary font-title;
     
+}
+
+.about__img {
+    @apply w-1/2;
 }
 
 .about__features {
@@ -112,19 +144,11 @@ section {
 }
 
 .experience__title {
-    @apply font-title text-5xl font-black flex flex-col items-start mb-5;
+    @apply font-title text-5xl font-black flex gap-2 items-start mb-5 text-primary;
 
-    .experience__title-1 {
-        @apply leading-8 mr-8;
-    }
-
-    .experience__title-2 {
-        @apply text-primary flex gap-2 ml-8;
-
-        &::before {
-            content: "Y";
-            @apply text-black text-xl font-medium;
-        }
+    &::before {
+        content: "Mi";
+        @apply text-black text-xl font-medium;
     }
 }
 

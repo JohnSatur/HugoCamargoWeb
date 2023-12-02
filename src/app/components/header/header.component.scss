@@ -1,10 +1,10 @@
 .header {
-    @apply fixed w-full px-5 bg-body top-0 left-0 z-50;
+    @apply fixed w-full px-5 bg-body top-0 left-0 z-50 py-2;
     .nav {
         @apply container mx-auto flex justify-between items-center h-14 py-8;
 
         .nav__logo {
-            @apply w-36;
+            @apply w-36 md:w-48;
         }
 
         .nav__toggle,

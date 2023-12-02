@@ -18,10 +18,12 @@
                 <h2 class="about__title-1">¿QUIÉN ES</h2>
                 <h2 class="about__title-2">HUGO CAMARGO?</h2>
             </div>
-            <img src="../assets/img/retrato-hugo-camargo-2.jpg" alt="Retrato de Hugo Camargo" class="about__img">
-            <div class="about__text">
-                <p class="about__paragraph">¡Hola! Soy Hugo, un <strong>físico teórico</strong> especializado en temas de <strong>altas energías</strong> y de <strong>física gravitacional</strong>. Actualmente estoy realizando una estancia posdoctoral en el <strong>Instituto de Ciencia y Tecnología de Gwangju (GIST)</strong> en Corea del Sur, tras haber concluido mi doctorado en el <strong>Instituto Max Planck de Física Gravitacional</strong> en Potsdam, Alemania. Antes de eso, realicé mis estudios de maestría en la <strong>Universidad de Cambridge</strong>, en el programa llamado Part III of the Mathematical Tripos, y de licenciatura en la <strong>Facultad de Ciencias de la Universidad Nacional Autónoma de México (UNAM)</strong>.</p>
-                <p class="about__paragraph">Mis intereses académicos van desde entender objetos extremadamente grandes y masivos, como los <strong>agujeros negros</strong>, hasta los mas pequeños y ligeros, como lo son las <strong>partículas elementales</strong>. Actualmente mi investigación se centra en estudiar aspectos cuánticos de la gravedad utilizando técnicas y conceptos de la <strong>teoría de información cuántica</strong>. Estoy realizando esta investigación gracias a una subvención del gobierno de Corea a través de su <strong>Fundación Nacional de Investigación (NRF)</strong>.</p>
+            <div class="about__content">
+                <div class="about__img"></div>
+                <div class="about__text">
+                    <p class="about__paragraph">¡Hola! Soy Hugo, un <strong>físico teórico</strong> especializado en temas de <strong>altas energías</strong> y de <strong>física gravitacional</strong>. Actualmente estoy realizando una estancia posdoctoral en el <strong>Instituto de Ciencia y Tecnología de Gwangju (GIST)</strong> en Corea del Sur, tras haber concluido mi doctorado en el <strong>Instituto Max Planck de Física Gravitacional</strong> en Potsdam, Alemania. Antes de eso, realicé mis estudios de maestría en la <strong>Universidad de Cambridge</strong>, en el programa llamado Part III of the Mathematical Tripos, y de licenciatura en la <strong>Facultad de Ciencias de la Universidad Nacional Autónoma de México (UNAM)</strong>.</p>
+                    <p class="about__paragraph">Mis intereses académicos van desde entender objetos extremadamente grandes y masivos, como los <strong>agujeros negros</strong>, hasta los mas pequeños y ligeros, como lo son las <strong>partículas elementales</strong>. Actualmente mi investigación se centra en estudiar aspectos cuánticos de la gravedad utilizando técnicas y conceptos de la <strong>teoría de información cuántica</strong>. Estoy realizando esta investigación gracias a una subvención del gobierno de Corea a través de su <strong>Fundación Nacional de Investigación (NRF)</strong>.</p>
+                </div>
             </div>
             <div class="about__text">
                 <h3 class="about__text-subtitle">Sobre mi investigación</h3>
@@ -32,9 +34,13 @@
 
                 <img src="../assets/img/AdSCFT.png" alt="AdSCFT">
 
-                <p class="about__paragraph">Esta analogía tiene una formulación matemática muy precisa que establece una equivalencia entre algunas teorías de gravedad que viven en espacios con curvatura negativa, llamados espacios <strong>anti-de Sitter</strong>, y teorías cuánticas que viven la frontera (o borde) de dichos espacios y que tienen una clase de simetría llamada <strong>simetría conforme</strong>. Por esta razón, a esta dualidad también se le suele llamar Correspondencia Anti-de Sitter/Teoría Conforme de Campos, o simplemente, <strong>Correspondencia AdS/CFT</strong> por sus siglas en inglés. En términos prácticos, la correspondencia actúa como una especie de diccionario entre los dos tipos de teorías. Aunque tenemos una “receta” que nos dice cómo pasar de una teoría a otra, este diccionario aún está incompleto y gran parte del esfuerzo de la comunidad se ha centrado en añadir “entradas” a dicho diccionario con el objetivo de entender mejor la profunda relación que existe entre estas dos clases de teorías.</p>
 
-                <img src="../assets/img/dictionary.webp" alt="diccionario">
+                <div class="about__text-container">
+                    <p class="about__paragraph">Esta analogía tiene una formulación matemática muy precisa que establece una equivalencia entre algunas teorías de gravedad que viven en espacios con curvatura negativa, llamados espacios <strong>anti-de Sitter</strong>, y teorías cuánticas que viven la frontera (o borde) de dichos espacios y que tienen una clase de simetría llamada <strong>simetría conforme</strong>. Por esta razón, a esta dualidad también se le suele llamar Correspondencia Anti-de Sitter/Teoría Conforme de Campos, o simplemente, <strong>Correspondencia AdS/CFT</strong> por sus siglas en inglés. En términos prácticos, la correspondencia actúa como una especie de diccionario entre los dos tipos de teorías. Aunque tenemos una “receta” que nos dice cómo pasar de una teoría a otra, este diccionario aún está incompleto y gran parte del esfuerzo de la comunidad se ha centrado en añadir “entradas” a dicho diccionario con el objetivo de entender mejor la profunda relación que existe entre estas dos clases de teorías.</p>
+
+                    <div class="about__img img-dictionary"></div>
+
+                </div>
 
                 <p class="about__paragraph">En los últimos 15 años, una parte de esta comunidad se dio cuenta que ciertos conceptos provenientes de la <strong>teoría de información cuántica</strong>, tales como el <strong>entrelazamiento cuántico</strong>, podían utilizarse para entender mejor ciertas propiedades cuánticas de la gravedad; esencialmente añadiendo entradas muy importantes al diccionario. De hecho, resultó natural formular la idea que el entrelazamiento cuántico entre distintos componentes del sistema cuántico era de cierta manera responsable del surgimiento de la gravedad. Esta observación suele resumirse con el eslogan: <strong>“La gravedad es un fenómeno emergente”</strong> y forma parte del folclor del campo.</p>
 
@@ -84,17 +90,14 @@
     <!-- Experience -->
     <section class="experience" id="experience">
         <div class="experience__container">
-            <div class="experience__title">
-                <h2 class="experience__title-1">EXPERIENCIA</h2>
-                <h2 class="experience__title-2">EDUCACIÓN</h2>
-            </div>
+            <h2 class="experience__title">EXPERIENCIA</h2>
 
             <app-card *ngFor="let card of experiencia" [institucion]="card.institucion" [periodo]="card.periodo" [logoURL]="card.logoURL" [descripcion]="card.descripcion"></app-card>
         </div>
     </section>
 
     <!--Education-->
-    
+
 
     <!-- Research -->
     <section class="research" id="research">
